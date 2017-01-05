@@ -1,3 +1,6 @@
+/*En el diseño adaptable es mejor usar porcentajes
+cuando se trata del width*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -13,7 +16,7 @@ body {
 }
 
 .contenedor {
-	width: 90%;
+	width: 90%;/*Para que tenga un 10% de espaciado*/
 	max-width: 1000px;
 	margin: 20px auto;
 	overflow: hidden;
@@ -50,7 +53,7 @@ header nav ul li a:hover {
 }
 
 .main{
-	width: 700px;
+	width: 70%;
 	background: #fff;
 	float: left;/*Asi esta uno al lado del otro*/
 }
@@ -79,7 +82,7 @@ header nav ul li a:hover {
 }
 
 aside {
-	width: 300px;
+	width: 30%;
 	background: #161f26;
 	padding: 20px;
 	color: #fff;
@@ -127,3 +130,14 @@ footer {
 	text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+	.main {
+		width: 100%;
+	}
+	aside {
+		width: 100%;
+	}
+	footer {
+		width: 100%;
+	}
+}
